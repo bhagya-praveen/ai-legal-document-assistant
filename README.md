@@ -145,6 +145,8 @@ Create a .env file in the project root:
 
 
 JWT_SECRET_KEY=your-jwt-secret
+
+
 GEMINI_API_KEY=your-gemini-api-key
 
 
