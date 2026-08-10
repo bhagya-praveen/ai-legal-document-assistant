@@ -73,6 +73,9 @@ An AI-powered web application that allows users to upload legal PDF documents an
 
 
 git clone https://github.com/bhagya-praveen/ai-legal-document-assistant.git
+
+
+
 cd ai-legal-document-assistant
 
 
