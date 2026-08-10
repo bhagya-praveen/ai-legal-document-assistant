@@ -47,9 +47,6 @@ An AI-powered web application that allows users to upload legal PDF documents an
 
 ## Project Structure
 
-
-## Project Structure
-
 * `app.py` — Main Flask application
 * `config.py` — Application configuration
 * `database/` — Database setup
