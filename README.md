@@ -48,68 +48,26 @@ An AI-powered web application that allows users to upload legal PDF documents an
 ## Project Structure
 
 
-AI Based Legal Document/
-│
-├── app.py
-├── config.py
-├── requirements.txt
-├── .gitignore
-│
-├── database/
-│   ├── db.py
-│   └── __init__.py
-│
-├── models/
-│   ├── document.py
-│   ├── user.py
-│   └── __init__.py
-│
-├── routes/
-│   ├── auth.py
-│   ├── documents.py
-│   └── __init__.py
-│
-├── services/
-│   └── rag_services.py
-│
-├── static/
-│   ├── script.js
-│   └── style.css
-│
-└── templates/
-    └── index.html
+## Project Structure
 
+* `app.py` — Main Flask application
+* `config.py` — Application configuration
+* `database/` — Database setup
+* `models/` — User and document models
+* `routes/` — Authentication and document API routes
+* `services/` — AI/document processing services
+* `static/` — CSS and JavaScript files
+* `templates/` — HTML frontend
+* `requirements.txt` — Project dependencies
 
 ## How It Works
 
-
-User
- │
- ▼
-Web Interface
- │
- ├── Register / Login
- │
- ▼
-JWT Authentication
- │
- ▼
-Upload Legal PDF
- │
- ▼
-PDF Text Extraction
- │
- ▼
-Store Document
- │
- ▼
-User Asks Question
- │
- ▼
-Gemini AI
- │
- ▼
-Answer Based on Document
+1. User creates an account and logs in.
+2. The user uploads a legal PDF.
+3. The application extracts text from the PDF.
+4. The user asks a question about the document.
+5. The extracted document text and question are sent to Gemini AI.
+6. The generated answer is displayed to the user.
 
 
 ## Setup
