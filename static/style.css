@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Main container */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+/* Header */
+
+h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 35px;
+}
+
+/* Cards */
+
+.card {
+    background: white;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+/* Inputs */
+
+input[type="email"],
+input[type="password"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+input[type="file"] {
+    background: #f8fafc;
+}
+
+/* Text area */
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Buttons */
+
+button {
+    padding: 11px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    background: #2563eb;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#registerButton {
+    margin-left: 8px;
+    background: #64748b;
+}
+
+#registerButton:hover {
+    background: #475569;
+}
+
+/* Status messages */
+
+#authStatus,
+#uploadStatus {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+/* Answer */
+
+.answer-box {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f8fafc;
+    border-left: 4px solid #2563eb;
+    border-radius: 7px;
+}
+
+.answer-box h3 {
+    margin-top: 0;
+    color: #0f172a;
+}
+
+#answer {
+    line-height: 1.7;
+    color: #475569;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #registerButton {
+        margin-left: 0;
+    }
+}
+
+#logoutButton {
+    display: none;
+    margin-left: 8px;
+    background: #dc2626;
+}
+
+#logoutButton:hover {
+    background: #b91c1c;
+}
+
+#uploadStatus {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 7px;
+    line-height: 1.6;
+}

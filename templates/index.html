@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Legal Document Assistant</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Legal Document Assistant</h1>
+
+        <p class="subtitle">
+            Upload a legal document and ask questions about it.
+        </p>
+
+
+        <!-- Authentication -->
+
+        <section class="card">
+
+            <h2>Login</h2>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email"
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Password"
+            >
+
+            <button id="loginButton">
+                Login
+            </button>
+
+            <button id="registerButton">
+                Register
+            </button>
+
+            <button id="logoutButton">
+                Logout
+            </button>
+
+            <p id="authStatus"></p>
+
+        </section>
+
+
+        <!-- Document Upload -->
+
+        <section class="card" id="documentSection" hidden>
+
+            <h2>Upload Document</h2>
+
+            <input
+                type="file"
+                id="documentFile"
+                accept=".pdf"
+            >
+
+            <button id="uploadButton">
+                Upload PDF
+            </button>
+
+            <p id="uploadStatus"></p>
+
+        </section>
+
+
+        <!-- Question -->
+
+        <section class="card"  id="questionSection" hidden>
+
+            <h2>Ask a Question</h2>
+
+            <textarea
+                id="question"
+                placeholder="Ask something about your legal document..."
+            ></textarea>
+
+            <button id="askButton">
+                Generate Answer
+            </button>
+
+            <div class="answer-box">
+
+                <h3>Answer</h3>
+
+                <p id="answer">
+                    Your answer will appear here.
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+# Environment variables and secrets
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+
+# Database
+*.db
+instance/
+
+# Uploaded documents
+uploads/
+test_files/
+
+# IDE
+.vscode/
+.idea/
+
+# Generated files
+reports/
